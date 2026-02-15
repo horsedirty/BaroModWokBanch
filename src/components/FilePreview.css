@@ -1,0 +1,288 @@
+.file-preview {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #0a0a0a;
+  overflow: hidden;
+}
+
+.file-tabs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.file-tabs .ant-tabs-nav {
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+  margin: 0;
+  padding: 0 8px;
+}
+
+.file-tabs .ant-tabs-tab {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-bottom: none;
+  margin: 4px 2px 0 2px;
+  padding: 6px 12px;
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+.file-tabs .ant-tabs-tab:hover {
+  color: #e0e0e0;
+}
+
+.file-tabs .ant-tabs-tab-active {
+  background: #0a0a0a;
+  color: #d4a017;
+  border-bottom: 2px solid #d4a017;
+}
+
+.file-tabs .ant-tabs-content-holder {
+  flex: 1;
+  overflow: hidden;
+}
+
+.file-tabs .ant-tabs-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.file-tabs .ant-tabs-tabpane {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tab-filename {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.xml-content {
+  background: #1a1a1a;
+  color: #e0e0e0;
+  padding: 16px;
+  margin: 0;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  overflow: auto;
+  height: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.xml-preview-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.xml-preview-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 12px;
+  background: #0a0a0a;
+  border-bottom: 1px solid #333;
+  flex-shrink: 0;
+}
+
+.xml-preview-container .xml-content {
+  flex: 1;
+  min-height: 0;
+}
+
+.xml-editor-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.xml-editor-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 12px;
+  background: #0a0a0a;
+  border-bottom: 1px solid #333;
+  flex-shrink: 0;
+}
+
+.xml-textarea {
+  flex: 1;
+  min-height: 0;
+  background: #1a1a1a !important;
+  color: #e0e0e0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace !important;
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+  padding: 16px !important;
+  resize: none !important;
+}
+
+.xml-textarea:focus {
+  box-shadow: none !important;
+}
+
+.image-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  background: #1a1a1a;
+}
+
+.image-preview-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background: #0a0a0a;
+  border-bottom: 1px solid #333;
+  flex-shrink: 0;
+}
+
+.image-preview-wrapper {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #1a1a1a;
+  min-height: 0;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border: 1px solid #333;
+  border-radius: 4px;
+  transition: transform 0.1s ease-out;
+  user-select: none;
+}
+
+.image-info {
+  padding: 8px 12px;
+  background: #0a0a0a;
+  border-top: 1px solid #333;
+  flex-shrink: 0;
+}
+
+.image-filename {
+  font-size: 11px;
+  color: #e0e0e0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
+}
+
+.empty-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #0a0a0a;
+}
+
+.app-layout.light-mode .file-preview {
+  background: #f5f5f5;
+}
+
+.app-layout.light-mode .file-tabs .ant-tabs-nav {
+  background: #ffffff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.app-layout.light-mode .file-tabs .ant-tabs-tab {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  color: #666666;
+}
+
+.app-layout.light-mode .file-tabs .ant-tabs-tab:hover {
+  color: #333333;
+}
+
+.app-layout.light-mode .file-tabs .ant-tabs-tab-active {
+  background: #f5f5f5;
+  color: #d4a017;
+}
+
+.app-layout.light-mode .xml-content {
+  background: #ffffff;
+  color: #333333;
+}
+
+.app-layout.light-mode .xml-preview-toolbar {
+  background: #f5f5f5;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.app-layout.light-mode .xml-editor-toolbar {
+  background: #f5f5f5;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.app-layout.light-mode .xml-textarea {
+  background: #ffffff !important;
+  color: #333333 !important;
+}
+
+.app-layout.light-mode .image-preview {
+  background: #ffffff;
+}
+
+.app-layout.light-mode .image-toolbar {
+  background: #f5f5f5;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.app-layout.light-mode .image-preview-wrapper {
+  background: #ffffff;
+}
+
+.app-layout.light-mode .preview-image {
+  border: 1px solid #d9d9d9;
+}
+
+.app-layout.light-mode .image-info {
+  background: #f5f5f5;
+  border-top: 1px solid #d9d9d9;
+}
+
+.app-layout.light-mode .image-filename {
+  color: #333333;
+}
+
+.app-layout.light-mode .empty-preview {
+  background: #f5f5f5;
+}

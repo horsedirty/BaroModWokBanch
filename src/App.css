@@ -1,0 +1,213 @@
+.app-layout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 56px;
+  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+  border-bottom: 2px solid #d4a017;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.app-layout.light-mode .app-header {
+  background: linear-gradient(180deg, #f5f5f5 0%, #e0e0e0 100%);
+  border-bottom: 2px solid #d4a017;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #d4a017 0%, #8b6914 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mod-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  padding-left: 24px;
+  border-left: 1px solid #333;
+}
+
+.mod-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #d4a017;
+  letter-spacing: 0.5px;
+}
+
+.mod-id {
+  font-size: 11px;
+  color: #a0a0a0;
+  letter-spacing: 0.3px;
+}
+
+.app-layout.light-mode .mod-info {
+  border-left: 1px solid #d9d9d9;
+}
+
+.app-layout.light-mode .mod-id {
+  color: #666666;
+}
+
+.header-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.main-layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 280px 1fr 400px 300px;
+  overflow: hidden;
+  gap: 0;
+}
+
+.panel-group {
+  height: 100%;
+  width: 100%;
+}
+
+.resize-handle {
+  background: #333;
+  transition: background-color 0.2s;
+  position: relative;
+}
+
+.resize-handle:hover,
+.resize-handle:active {
+  background: #d4a017;
+}
+
+.resize-handle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #666;
+  border-radius: 1px;
+}
+
+.resize-handle[data-panel-group-direction="horizontal"]::after {
+  width: 4px;
+  height: 20px;
+}
+
+.resize-handle[data-panel-group-direction="vertical"]::after {
+  width: 20px;
+  height: 4px;
+}
+
+.resize-handle:hover::after,
+.resize-handle:active::after {
+  background: #d4a017;
+}
+
+.app-layout.light-mode .resize-handle {
+  background: #d9d9d9;
+}
+
+.app-layout.light-mode .resize-handle:hover,
+.app-layout.light-mode .resize-handle:active {
+  background: #d4a017;
+}
+
+.app-layout.light-mode .resize-handle::after {
+  background: #999;
+}
+
+.app-layout.light-mode .resize-handle:hover::after,
+.app-layout.light-mode .resize-handle:active::after {
+  background: #d4a017;
+}
+
+.explorer-sider {
+  background: #0a0a0a;
+  border-right: 1px solid #333;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-layout.light-mode .explorer-sider {
+  background: #f5f5f5;
+  border-right: 1px solid #d9d9d9;
+}
+
+.view-menu {
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+  border-right: none;
+  flex-shrink: 0;
+}
+
+.app-layout.light-mode .view-menu {
+  background: #ffffff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.editor-layout {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.editor-content {
+  flex: 1;
+  overflow: hidden;
+}
+
+.preview-sider {
+  background: #0a0a0a;
+  border-left: 1px solid #333;
+  overflow: hidden;
+}
+
+.app-layout.light-mode .preview-sider {
+  background: #f5f5f5;
+  border-left: 1px solid #d9d9d9;
+}
+
+.sprite-sider {
+  background: #0a0a0a;
+  border-right: 1px solid #333;
+  overflow: auto;
+}
+
+.app-layout.light-mode .sprite-sider {
+  background: #f5f5f5;
+  border-right: 1px solid #d9d9d9;
+}
+
+.property-sider {
+  background: #0a0a0a;
+  border-left: 1px solid #333;
+  overflow: auto;
+}
+
+.app-layout.light-mode .property-sider {
+  background: #f5f5f5;
+  border-left: 1px solid #d9d9d9;
+}

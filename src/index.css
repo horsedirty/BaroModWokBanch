@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0a0a0a;
+  color: #e0e0e0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-btn-primary {
+  background: linear-gradient(180deg, #d4a017 0%, #8b6914 100%) !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(212, 160, 23, 0.3);
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(180deg, #e5b028 0%, #9c7a1a 100%) !important;
+  box-shadow: 0 4px 12px rgba(212, 160, 23, 0.5);
+}
+
+.ant-modal-content {
+  background: #1a1a1a !important;
+  border: 2px solid #333;
+}
+
+.ant-modal-header {
+  background: #0a0a0a !important;
+  border-bottom: 2px solid #d4a017;
+}
+
+.ant-modal-title {
+  color: #d4a017 !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.ant-modal-close-x {
+  color: #666 !important;
+}
+
+.ant-modal-close-x:hover {
+  color: #d4a017 !important;
+}
+
+.ant-input,
+.ant-input-number,
+.ant-select-selector {
+  background: #1a1a1a !important;
+  border-color: #333 !important;
+  color: #e0e0e0 !important;
+}
+
+.ant-input:focus,
+.ant-input-number:focus,
+.ant-select-focused .ant-select-selector {
+  border-color: #d4a017 !important;
+  box-shadow: 0 0 0 2px rgba(212, 160, 23, 0.1) !important;
+}
+
+.ant-card {
+  background: #1a1a1a !important;
+  border-color: #333 !important;
+}
+
+.ant-card-head {
+  border-bottom-color: #333 !important;
+}
+
+.ant-card-head-title {
+  color: #d4a017 !important;
+  font-weight: 600;
+}
+
+.ant-divider-horizontal {
+  border-color: #333 !important;
+}
+
+.ant-tag {
+  background: #2a2a2a !important;
+  border-color: #333 !important;
+  color: #e0e0e0 !important;
+}
+
+.ant-message {
+  background: #1a1a1a !important;
+  border: 2px solid #333;
+}
+
+.ant-message-notice-content {
+  color: #e0e0e0 !important;
+}
+
+.ant-form-item-label > label {
+  color: #a0a0a0 !important;
+}
+
+.ant-form-item-explain-error {
+  color: #ff4d4f !important;
+}

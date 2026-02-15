@@ -1,0 +1,92 @@
+.sprite-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #0a0a0a;
+  border-right: 1px solid #333;
+}
+
+.sprite-list-header {
+  padding: 16px;
+  background: #1a1a1a;
+  border-bottom: 2px solid #d4a017;
+}
+
+.sprite-list-header h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #d4a017;
+}
+
+.sprite-list .ant-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sprite-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-bottom: 1px solid #333;
+}
+
+.sprite-item:hover {
+  background-color: #1a1a1a;
+}
+
+.sprite-item.selected {
+  background-color: #2a2a2a;
+  border-left: 3px solid #d4a017;
+}
+
+.sprite-card {
+  width: 100%;
+  background: transparent;
+  border: none;
+}
+
+.sprite-card .ant-card-body {
+  padding: 8px 12px;
+}
+
+.sprite-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sprite-thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.sprite-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: #e0e0e0;
+  letter-spacing: 0.5px;
+}
+
+.empty-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: #666;
+}
+
+.empty-list p {
+  margin: 4px 0;
+  font-size: 13px;
+}
